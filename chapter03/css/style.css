@@ -1,4 +1,5 @@
 @import url(sanitize.css);
+@import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
 
 body {
     background-color: #f0f0f0;  /* 背景色をグレーに */
@@ -8,7 +9,7 @@ body {
 }
 
 .container {
-    width: 800px; /* 幅を　800pxに */
+    max-width: 800px; /* 幅を　800pxに */
     margin: 0 auto; /* 左右の余白を　autoにして、左右中央揃えに */
     box-shadow: 0 0 10px rgba(0, 0, 0, .3); /* 影をつける */
 }
@@ -20,8 +21,105 @@ header {
 }
 
 header h1 {
+    font-family: 'Sriracha', cursive;
     margin: 0; /* 余白をなくす */
     font-size: 24px; /* 文字の大きさを　24pxに */
     font-weight: normal; /* 文字の太さを太くしない */
     text-align: center; /* テキストを中央ぞろえに */
+}
+
+.description img {
+    float: left;
+    margin: 0 10px 10px 0;
+    /* transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+    transition: opacity 1s ease 0s;
+    ]
+}
+
+.information h1 {
+    font-size: 18px;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.information .type {
+    display: inline;
+    background-color: #e35a4d;
+    padding: 3px 5px;
+    font-size: 80%;
+    color: #FFF;
+}
+
+.description {
+    clear: left;
+}
+
+.content {
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.songs {
+    margin: 0 0 20px;
+}
+
+.songs h2 {
+    clear: left;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    background-color: #E6E4DD;
+    padding: 5px 10px;
+}
+
+.songs ol {
+    padding: 0;
+    margin: 0;
+    list-style: decimal inside;
+}
+.songs li {
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+    float: left;
+    padding: 5px 10px;
+}
+
+.clearfix:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    font-size: 80%;
+}
+
+@media only screen and (max-width:600px) {
+    .description img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    header {
+        padding: 5px;
+    }
+    header h1 {
+        font-size: 12px;
+    }
+    .songs li {
+        float: none;
+        width: inherit;
+    }
+}
+
+.description img:hover {
+    opacity: .5;
 }
