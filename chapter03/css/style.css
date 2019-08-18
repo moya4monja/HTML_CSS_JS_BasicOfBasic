@@ -19,7 +19,7 @@ header {
     color: #fff; /* 文字色を白に */
 }
 
-h1 {
+header h1 {
     margin: 0; /* 余白をなくす */
     font-size: 24px; /* 文字の大きさを　24pxに */
     font-weight: normal; /* 文字の太さを太くしない */
